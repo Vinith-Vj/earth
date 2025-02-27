@@ -309,7 +309,9 @@ a {
 }
 
 .parallax_container3 {
-    background-image: url('https://images.pexels.com/photos/17102549/pexels-photo-17102549/free-photo-of-tiles-on-roofs.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    /* background-image: url('https://images.pexels.com/photos/17102549/pexels-photo-17102549/free-photo-of-tiles-on-roofs.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+
+    background-image: url('https://images.pexels.com/photos/4004374/pexels-photo-4004374.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     /* min-height: 100vh; */
     background-attachment: fixed;
     background-size: cover;
@@ -370,6 +372,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .overlay {
@@ -379,6 +383,8 @@ a {
     width: 100%;
     transition: background-color 0.3s ease-in;
     top: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .projects .projects_img:hover .overlay {
@@ -412,12 +418,16 @@ a {
 }
 
 .footer_links {
-    border: 1px solid;
+    /* border: 1px solid; */
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     margin-bottom: 5px;
     border-radius: 5px;
+}
+
+.footer_links i {
+    color: white;
 }
 
 .footer_links:hover {
@@ -425,7 +435,7 @@ a {
     color: black;
 }
 
-.footer_links:hover p {
+.footer_links:hover p, .footer_links:hover i {
     color: black;
 }
 
@@ -458,7 +468,7 @@ a {
 
 .footer_line {
     margin-top: 20px;
-    height: 2px;
+    height: 0.9px;
     background-color: white;
     margin-bottom: 20px;
 }
@@ -525,4 +535,33 @@ a {
     padding: 20px;
     background-color: #e1e1e1a3;
     border-radius: 10px;
+}
+
+
+.careers {
+    padding: 40px;
+    background-color: #e1e1e1a3;
+}
+
+.career_line {
+    background-color: black;
+    height: 1px;
+}
+
+.position h3, span, i, p {
+    font-weight: bold;
+}
+
+.apply {
+    font-size: 30px;
+}
+
+.position_type, .position_time {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+}
+.position_type p, .position_time p {
+    margin: 0;
 }

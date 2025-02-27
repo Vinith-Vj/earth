@@ -18,5 +18,8 @@ def project_details(request):
 def what(request):
     return render(request, 'what_we_offer.html')
 
+def career(request):
+    return render(request, 'careers.html')
+
 def contact(request):
     return render(request, 'contact_us.html')

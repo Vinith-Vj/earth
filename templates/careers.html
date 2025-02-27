@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block parallax %}https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1{% endblock  %}
+
+{% block heading %}CAREERS{% endblock  %}
+
+{% block body %}
+
+
+<div class="container mt-5 mb-5">
+    <div class="careers d-flex flex-column justify-content-between">
+        <div class="career_heading d-flex flex-column mb-5">
+            <div class="we">
+                <a>We're Hiring!</a>
+            </div>
+            <h1>Be part of our mission</h1>
+            <p>We are looking for passionate people to join on our mission. </p>
+            <p>We value flat hierarchies, clear communication, and full ownership and responsibility.</p>
+        </div>
+
+        <div class="career_line"></div>
+
+        <div class="position d-flex flex-column mt-3 mb-3">
+            <div class="position_heading d-flex justify-content-between align-items-center">
+                <h3>Product Designer</h3>
+                <div class="apply class="apply" data-bs-toggle="modal" data-bs-target="#applyModal" style="cursor: pointer;"">
+                    <span>Apply</span>
+                    <i class="ri-arrow-right-up-line"></i>
+                </div>
+            </div>
+            <p>We're Looking for a mid-level product designer to join our team.</p>
+
+            <div class="position_details d-flex gap-3">
+                <div class="position_type d-flex align-items-center justify-content-center gap-1">
+                    <i class="ri-map-pin-line"></i>
+                    <p>100% remote</p>
+                </div>
+                <div class="position_time d-flex align-items-center justify-content-center gap-1">
+                    <i class="ri-time-line"></i>
+                    <p>Full-time</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="career_line"></div>
+        <div class="career_line"></div>
+
+        <div class="position d-flex flex-column mt-3 mb-3">
+            <div class="position_heading d-flex justify-content-between align-items-center">
+                <h3>Product Designer</h3>
+                <div class="apply class="apply" data-bs-toggle="modal" data-bs-target="#applyModal" style="cursor: pointer;"">
+                    <span>Apply</span>
+                    <i class="ri-arrow-right-up-line"></i>
+                </div>
+            </div>
+            <p>We're Looking for a mid-level product designer to join our team.</p>
+
+            <div class="position_details d-flex gap-3">
+                <div class="position_type d-flex align-items-center justify-content-center gap-1">
+                    <i class="ri-map-pin-line"></i>
+                    <p>100% remote</p>
+                </div>
+                <div class="position_time d-flex align-items-center justify-content-center gap-1">
+                    <i class="ri-time-line"></i>
+                    <p>Full-time</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="career_line"></div>
+        <div class="career_line"></div>
+
+        <div class="position d-flex flex-column mt-3 mb-3">
+            <div class="position_heading d-flex justify-content-between align-items-center">
+                <h3>Product Designer</h3>
+                <div class="apply class="apply" data-bs-toggle="modal" data-bs-target="#applyModal" style="cursor: pointer;"">
+                    <span>Apply</span>
+                    <i class="ri-arrow-right-up-line"></i>
+                </div>
+            </div>
+            <p>We're Looking for a mid-level product designer to join our team.</p>
+
+            <div class="position_details d-flex gap-3">
+                <div class="position_type d-flex align-items-center justify-content-center gap-1">
+                    <i class="ri-map-pin-line"></i>
+                    <p>100% remote</p>
+                </div>
+                <div class="position_time d-flex align-items-center justify-content-center gap-1">
+                    <i class="ri-time-line"></i>
+                    <p>Full-time</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="career_line"></div>
+        <div class="career_line"></div>
+
+        <div class="position d-flex flex-column mt-3 mb-3">
+            <div class="position_heading d-flex justify-content-between align-items-center">
+                <h3>Product Designer</h3>
+                <div class="apply class="apply" data-bs-toggle="modal" data-bs-target="#applyModal" style="cursor: pointer;"">
+                    <span>Apply</span>
+                    <i class="ri-arrow-right-up-line"></i>
+                </div>
+            </div>
+            <p>We're Looking for a mid-level product designer to join our team.</p>
+
+            <div class="position_details d-flex gap-3">
+                <div class="position_type d-flex align-items-center justify-content-center gap-1">
+                    <i class="ri-map-pin-line"></i>
+                    <p>100% remote</p>
+                </div>
+                <div class="position_time d-flex align-items-center justify-content-center gap-1">
+                    <i class="ri-time-line"></i>
+                    <p>Full-time</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="career_line"></div>
+
+
+        <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="applyModalLabel">Apply for Product Designer</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="resume" class="form-label">Upload Resume</label>
+                                <input type="file" class="form-control" id="resume">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+{% endblock %}
