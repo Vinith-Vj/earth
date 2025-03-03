@@ -596,3 +596,7 @@ a {
 .position_type p, .position_time p {
     margin: 0;
 }
+
+.p_fontweight {
+    font-weight: unset;
+}
