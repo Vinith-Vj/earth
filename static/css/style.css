@@ -330,7 +330,7 @@ a {
 .parallax_container3 {
     /* background-image: url('https://images.pexels.com/photos/17102549/pexels-photo-17102549/free-photo-of-tiles-on-roofs.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
 
-    background-image: url('https://images.pexels.com/photos/4004374/pexels-photo-4004374.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     /* min-height: 100vh; */
     background-attachment: fixed;
     background-size: cover;
@@ -573,12 +573,18 @@ a {
     height: 1px;
 }
 
+.position {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
 .position h3, span, i, p {
     font-weight: bold;
 }
 
 .apply {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .position_type, .position_time {
