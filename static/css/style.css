@@ -5,6 +5,8 @@
 body {
     /* font-family: "Roboto", serif; */
     font-family: "Nunito Sans", serif;
+    /* font-family: "Montserrat", sans-serif; */
+    /* font-weight: 500; */
 }
 
 .heading {
@@ -26,7 +28,8 @@ a {
 }
 
 .navbar.scrolled {
-    background-color: rgba(255, 255, 255, 0.795) !important;
+    /* background-color: rgba(255, 255, 255, 0.795) !important; */
+    background-color: white !important;
     /* box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);  */
 }
 .navbar-collapse {
@@ -77,9 +80,20 @@ a {
     width: 100%;
 }
 
-.header .carousel img {
+.header .carousel video {
     height: 100vh;
     object-fit: cover;
+}
+
+.header .carousel-indicators {
+    bottom: 110px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #25abe0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
 
 .header_box {
@@ -91,6 +105,10 @@ a {
     z-index: 100;
     background-color: #25abe0;
     align-items: center;
+}
+
+.header_box_details span {
+    font-size: 30px;
 }
 
 .sticky_icons {
@@ -128,7 +146,7 @@ a {
 .parallax_container1 {
     /* background-image: url('https://images.pexels.com/photos/30798185/pexels-photo-30798185/free-photo-of-green-postbox-casting-shadow-on-wall.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
     /* background-image: url('https://images.pexels.com/photos/1166644/pexels-photo-1166644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
-    background-image: url('https://images.pexels.com/photos/457712/pexels-photo-457712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -139,6 +157,25 @@ a {
     align-items: center;
     justify-content: center;
     color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.parallax_container1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 62%); /* Adjust the 0.5 to control darkness */
+    z-index: 1;
+}
+
+
+/* To make sure your text/content stays above the overlay */
+.parallax_container1 > * {
+    /* position: relative; */
+    z-index: 2;
 }
 
 /* .parallax_container1 .container {
@@ -147,7 +184,7 @@ a {
 } */
 
 .about_img {
-    height: 80vh;
+    height: 550px;
     padding-right: 130px;
 }
 
@@ -169,7 +206,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #25abe0;
     color: white;
     padding: 5px 0 5px 0;
     transition:  background-color 0.4s ease, color 0.4s ease ;
@@ -202,6 +239,25 @@ a {
     padding-bottom: 60px;
 }
 
+.parallax_container2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 32%); /* Adjust the 0.5 to control darkness */
+    z-index: 1;
+}
+
+
+/* To make sure your text/content stays above the overlay */
+.parallax_container2 > * {
+    /* position: relative; */
+    z-index: 2;
+}
+
+
 
 /* .parallax_container2 .container {
     position: absolute;
@@ -220,22 +276,30 @@ a {
 
 .home_service {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.397);
+    /* background-color: rgba(255, 255, 255, 0.397); */
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2px);
-    /* height: 500px; */
+    height: 550px;
+}
+
+@media (max-width: 576px) {
+    .home_service {
+        height: unset;
+    }
 }
 
 .home_service h6 {
     font-size: 13px;
-    color: red;
+    color: #25abe0;
     font-weight: bold;
 }
 
 .home_service p {
     font-family: 17px;
     color: #2d465e;
+    font-weight: 500;
 }
 
 .home_service .btn {
@@ -246,12 +310,12 @@ a {
 }
 
 .home_service .btn:hover {
-    background-color: black;
+    background-color: #25abe0;
     color: white;
 }
 
 .home_service_img {
-    height: 200px;
+    height: 300px;
     width: 100%;
     border-radius: 10px;
 }
@@ -278,7 +342,7 @@ a {
 .contact-container {
     display: flex;
     height: 100px;
-    background-color: black;
+    background-color: #4c4c4c;
     color: white;
     justify-content: space-between;
     padding-left: 40px;
@@ -330,7 +394,7 @@ a {
 .parallax_container3 {
     /* background-image: url('https://images.pexels.com/photos/17102549/pexels-photo-17102549/free-photo-of-tiles-on-roofs.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
 
-    background-image: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://images.pexels.com/photos/12498613/pexels-photo-12498613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     /* min-height: 100vh; */
     background-attachment: fixed;
     background-size: cover;
@@ -343,6 +407,25 @@ a {
     padding-bottom: 60px;
 
 }
+
+.parallax_container3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 32%); /* Adjust the 0.5 to control darkness */
+    z-index: 1;
+}
+
+
+/* To make sure your text/content stays above the overlay */
+.parallax_container3 > * {
+    /* position: relative; */
+    z-index: 2;
+}
+
 
 .parallax_container3 h4,h6 {
     color: white;
@@ -509,7 +592,7 @@ a {
 
 .team_contact {
     display: flex;
-    background-color: black;
+    background-color: #4c4c4c;
     color: white;
     justify-content: space-between;
     padding: 20px;
@@ -579,9 +662,9 @@ a {
     border-radius: 10px;
 }
 
-.position h3, span, i, p {
+/* .position h3, span, i, p {
     font-weight: bold;
-}
+} */
 
 .apply {
     font-size: 20px;
