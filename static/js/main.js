@@ -30,3 +30,20 @@ window.addEventListener("scroll", function () {
 
 //     // Play the first video when the page loads
 //     window.addEventListener('load', handleVideoPlayback);
+
+
+const carousel = document.querySelector('#carouselExampleFade');
+carousel.addEventListener('slide.bs.carousel', function () {
+    // Remove the active animations instantly when slide starts changing
+    document.querySelectorAll('.custom-caption').forEach(caption => {
+        caption.style.opacity = '0';
+    });
+});
+
+carousel.addEventListener('slid.bs.carousel', function () {
+    // After slide finishes, allow captions to animate again
+    const activeItem = document.querySelector('.carousel-item.active .custom-caption');
+    if (activeItem) {
+        activeItem.style.opacity = '1';
+    }
+});
