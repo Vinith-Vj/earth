@@ -1,9 +1,22 @@
 window.addEventListener("scroll", function () {
     let navbar = document.querySelector(".navbar");
+    let navLinks = this.document.querySelectorAll(".nav-item a");
     if (window.scrollY > 50) {
         navbar.classList.add("scrolled");
+
+        navLinks.forEach(function (link) {
+            link.style.color = "black";
+            link.style.textShadow = "none";
+        });
+
     } else {
         navbar.classList.remove("scrolled");
+
+        navLinks.forEach(function (link) {
+            link.style.color = "white";
+            link.style.textShadow = "0 0 5px black";
+        });
+
     }
 });
 
