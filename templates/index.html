@@ -22,6 +22,7 @@
 <body>
 
 
+  
 
     
 
@@ -31,7 +32,7 @@
       <div class="container">
         <div class="logo">
           <a class="navbar-brand" href="#">
-            <img src="{% static "images/logo-2.png" %}" alt="" style="height: 60px; width:114px">
+            <img src="{% static "images/logo-2.png" %}" alt="" style="height: 70px; width:114px">
           </a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -125,6 +126,8 @@
             <i class="ri-phone-line"></i>
           </div>
         </div>
+
+       
   </div>
 
   <div class="header_box">
@@ -164,7 +167,8 @@
         <div class="heading">
           <div class="sub_heading d-flex align-items-center gap-1">
             <h6 class="mt-2">ABOUT</h6>
-            <div class="line"></div>
+            {% comment %} <div class="line"></div> {% endcomment %}
+            <div class="loader"></div>
           </div>
           <h4 class="heading">ABOUT SECTION</h4>
         </div>
@@ -199,9 +203,11 @@
                     residential and commercial spaces to industrial and institutional developments...
                   </p>
                   <a href="who-we-are">
-                    <div class="read">
-                      <span>READ MORE</span>
-                    </div>
+                    <button class="reads">
+                      <span class="box">
+                          READ MORE
+                      </span>
+                    </button>
                   </a>
                 </div>
               </div>
@@ -217,9 +223,11 @@
                     technologies, and innovative engineering solutions...
                   </p>
                   <a href="who-we-are">
-                    <div class="read">
-                      <span>READ MORE</span>
-                    </div>
+                    <button class="reads">
+                      <span class="box">
+                          READ MORE
+                      </span>
+                    </button>
                   </a>
                 </div>
               </div>
@@ -236,13 +244,14 @@
         <div class="heading">
           <div class="sub_heading d-flex align-items-center gap-1">
             <h6 class="mt-2">SERVICES</h6>
-            <div class="line"></div>
+            {% comment %} <div class="line"></div> {% endcomment %}
+            <div class="loader"></div>
           </div>
           <h4 class="heading">SERVICE SECTION</h4>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+        {% comment %} <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
           <div class="d-flex flex-column home_service  gap-3">
             <div class="home_service_img">
               <img src="{% static "images/com-img1.jpg" %}" alt="">
@@ -251,7 +260,11 @@
               <div class="d-flex justify-content-between align-items-center">
                 <h6 class="mt-3" style="text-shadow: unset;">TURNKEY PROJECTS</h6>
                 <a href="what-we-offer">
-                  <div class="btn">&#8811;</div>
+                  <button class="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                    </svg>
+                  </button>
                 </a>
               </div>
               
@@ -272,7 +285,11 @@
               <div class="d-flex justify-content-between align-items-center">
                 <h6 class="mt-3" style="text-shadow: unset;">TOTAL CONSULTANCY</h6>
                 <a href="what-we-offer">
-                  <div class="btn">&#8811;</div>
+                  <button class="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                    </svg>
+                  </button>
                 </a>
               </div>
               
@@ -292,7 +309,11 @@
               <div class="d-flex justify-content-between align-items-center">
                 <h6 class="mt-3" style="text-shadow: unset;">INTERIOR DESIGN</h6>
                 <a href="what-we-offer">
-                  <div class="btn">&#8811;</div>
+                  <button class="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                    </svg>
+                  </button>
                 </a>
               </div>
               
@@ -312,7 +333,11 @@
               <div class="d-flex justify-content-between align-items-center">
                 <h6 class="mt-3" style="text-shadow: unset;">LANDSCAPE DESIGN</h6>
                 <a href="what-we-offer">
-                  <div class="btn">&#8811;</div>
+                  <button class="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                    </svg>
+                  </button>
                 </a>
               </div>
               
@@ -320,6 +345,215 @@
                 visually appealing, and sustainable solutions. Whether it’s residential gardens, urban parks, or
                 commercial landscapes, we craft environments that blend seamlessly with architecture while
                 promoting greenery, relaxation, and environmental harmony...</p>
+            </div>
+          </div>
+        </div> {% endcomment %}
+
+        {% comment %} <div class="col-lg-3 col-md-3 col-sm-6 mb-3">
+          <!-- From Uiverse.io by ElSombrero2 --> 
+          <div class="card">
+            <div class="content">
+              <div class="back">
+                <div class="back-content">
+                  
+                  <strong>See More</strong>
+                </div>
+              </div>
+              <div class="front">
+                
+                <div class="img">
+                  <div class="circle">
+                  </div>
+                  <div class="circle" id="right">
+                  </div>
+                  <div class="circle" id="bottom">
+                  </div>
+                </div>
+
+                <div class="front-content">
+                  <small class="badge">Hey</small>
+                  <div class="description">
+                    <div class="title">
+                      <p class="title">
+                        <strong>TURNKEY PROJECTS</strong>
+                      </p>
+                      <button class="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp; | &nbsp; 1 Serving
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 mb-3">
+          <!-- From Uiverse.io by ElSombrero2 --> 
+          <div class="card">
+            <div class="content">
+              <div class="back">
+                <div class="back-content">
+                  
+                  <strong>See More</strong>
+                </div>
+              </div>
+              <div class="front">
+                
+                <div class="img">
+                  <div class="circle">
+                  </div>
+                  <div class="circle" id="right">
+                  </div>
+                  <div class="circle" id="bottom">
+                  </div>
+                </div>
+
+                <div class="front-content">
+                  <small class="badge">Hey</small>
+                  <div class="description">
+                    <div class="title">
+                      <p class="title">
+                        <strong>TOTAL CONSULTANCY</strong>
+                      </p>
+                      <button class="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp; | &nbsp; 1 Serving
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 mb-3">
+          <!-- From Uiverse.io by ElSombrero2 --> 
+          <div class="card">
+            <div class="content">
+              <div class="back">
+                <div class="back-content">
+                  
+                  <strong>See More</strong>
+                </div>
+              </div>
+              <div class="front">
+                
+                <div class="img">
+                  <div class="circle">
+                  </div>
+                  <div class="circle" id="right">
+                  </div>
+                  <div class="circle" id="bottom">
+                  </div>
+                </div>
+
+                <div class="front-content">
+                  <small class="badge">Hey</small>
+                  <div class="description">
+                    <div class="title">
+                      <p class="title">
+                        <strong>INTERIOR DESIGN</strong>
+                      </p>
+                      <button class="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp; | &nbsp; 1 Serving
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 mb-3">
+          <!-- From Uiverse.io by ElSombrero2 --> 
+          <div class="card">
+            <div class="content">
+              <div class="back">
+                <div class="back-content">
+                  
+                  <strong>See More</strong>
+                </div>
+              </div>
+              <div class="front">
+                
+                <div class="img">
+                  <div class="circle">
+                  </div>
+                  <div class="circle" id="right">
+                  </div>
+                  <div class="circle" id="bottom">
+                  </div>
+                </div>
+
+                <div class="front-content">
+                  <small class="badge">Hey</small>
+                  <div class="description">
+                    <div class="title">
+                      <p class="title">
+                        <strong>LANDSCAPE DESIGN</strong>
+                      </p>
+                      <button class="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="card-footer">
+                      30 Mins &nbsp; | &nbsp; 1 Serving
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> {% endcomment %}
+
+        <div class="col-lg-12">
+          <div class="cardss">
+            <div class="cards red">
+                <p class="tip">TURNKEY PROJECTS</p>
+                <a href="what-we-offer">
+                  <button class="btns"> Read More
+                  </button>
+                </a>
+            </div>
+            <div class="cards blue">
+                <p class="tip">TOTAL CONSULTANCY</p>
+                <a href="what-we-offer">
+                  <button class="btns"> Read More
+                  </button>
+                </a>
+            </div>
+            <div class="cards red">
+                <p class="tip">INTERIOR DESIGN</p>
+                <a href="what-we-offer">
+                  <button class="btns"> Read More
+                  </button>
+                </a>
+            </div>
+            <div class="cards blue">
+                <p class="tip">LANDSCAPE DESIGN</p>
+                <a href="what-we-offer">
+                  <button class="btns"> Read More
+                  </button>
+                </a>
             </div>
           </div>
         </div>
@@ -332,9 +566,11 @@
       <span>Know more about us ?</span>
     </div>
     <a href="contact-us">
-      <div class="con">
-        <span>contact us</span>
-      </div>
+      <button class="reads">
+        <span class="box">
+            CONACT US
+        </span>
+      </button>
     </a>
   </div>
   
@@ -344,7 +580,8 @@
         <div class="heading">
           <div class="sub_heading d-flex align-items-center gap-1">
             <h6 class="mt-2">PROJECTS</h6>
-            <div class="line"></div>
+            {% comment %} <div class="line"></div> {% endcomment %}
+            <div class="loader"></div>
           </div>
           <h4 class="heading">PROJECTS SECTION</h4>
         </div>
@@ -387,7 +624,7 @@
             </div>
           </a>
         </div>
-        
+
         <div class="col-lg-4 col-md-6 col-sm-6 col-6 projects_img">
           <a href="project-details">
             <div class="projects_details" style="background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; height: 100%;">
@@ -427,12 +664,22 @@
       </div>
 
       <div class="d-flex justify-content-center mt-4">
-        <div class="read" style="width: 200px;">
+        {% comment %} <div class="read" style="width: 200px;">
           <a href="projects">
             <span>READ MORE . . .</span>
           </a>
-        </div>
-      </div>
+        </div> {% endcomment %}
+        <a href="projects">
+          <button class="reads">
+            <span class="box">
+              READ MORE
+            </span>
+          </button>
+        </a>
+      </div> 
+
+      
+
     </div>
   </div>
 
@@ -441,9 +688,11 @@
       <span>Wanna build up your career with us ?</span>
     </div>
     <a href="careers">
-      <div class="con">
-        <span>connect with us</span>
-      </div>
+      <button class="reads">
+        <span class="box">
+          CONACT US
+        </span>
+      </button>
     </a>
   </div>
 
@@ -537,11 +786,13 @@
             <p>Earth N’ Sky Architects & Engineers</p>
             <p>Example, Kollam, Kerala</p>
             <p>691889</p>
-            <div class="direction">
               <a href="">
-                <p>DIRECTION</p>
+                <button class="reads">
+                  <span class="box">
+                    DIRECTION
+                  </span>
+                </button>
               </a>
-            </div>
           </div>
         </div>
 
@@ -552,11 +803,15 @@
             <p>Earth N’ Sky Architects & Engineers</p>
             <p>Example, Kollam, Kerala</p>
             <p>691889</p>
-            <div class="direction">
+            
               <a href="">
-                <p>DIRECTION</p>
+                <button class="reads">
+                  <span class="box">
+                    DIRECTION
+                  </span>
+                </button>
               </a>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -567,9 +822,9 @@
         <div class="col-lg-4 col-6">
           <div class="row">
             <div class="col-12">
-              <div class="footer_links" style="background-color: white; color: black;">
+              <div class="footer_links">
                 <a href="/">
-                    <p style="color: black; font-size: 18px; font-weight: bold;">QUICK LINKS</p>
+                    <p style="font-size: 18px; font-weight: 900 !important;">QUICK LINKS</p>
                 </a>
               </div>
             </div>
@@ -621,9 +876,9 @@
         <div class="col-lg-4 col-6">
           <div class="row">
             <div class="col-12">
-              <div class="footer_links" style="background-color: white; color: black;">
+              <div class="footer_links">
                 <a href="">
-                    <p style='color: black; font-size: 18px; font-weight: bold;'>WHAT WE OFFER</p>
+                    <p style='font-size: 18px; font-weight: 900 !important;'>WHAT WE OFFER</p>
                 </a>
               </div>
             </div>
@@ -661,9 +916,9 @@
         <div class="col-lg-4 col-6">
           <div class="row">
             <div class="col-12">
-              <div class="footer_links" style="background-color: white; color: black;">
+              <div class="footer_links">
                 <a href="">
-                    <p style='color: black; font-size: 18px; font-weight: bold;'>GET IN TOUCH</p>
+                    <p style='font-size: 18px; font-weight: 900 !important;'>GET IN TOUCH</p>
                 </a>
               </div>
             </div>

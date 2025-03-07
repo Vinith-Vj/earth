@@ -19,7 +19,6 @@ window.addEventListener("scroll", function () {
 
     }
 });
-
 // const carousel = document.getElementById('carouselExampleFade');
 
 //     // Function to handle playing/pausing videos
