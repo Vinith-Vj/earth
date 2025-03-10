@@ -133,6 +133,12 @@ p {
     transition: opacity 1s ease, transform 1s ease;
 }
 
+@media (max-width: 576px) {
+    .custom-caption h1 {
+        font-size: 30px;
+    }
+}
+
 .custom-caption p {
     font-size: 1.5rem;
     margin: 0;
@@ -545,7 +551,7 @@ p {
 
 @media (max-width: 576px) {
     .projects .projects_img {
-        height: 200px;
+        height: 300px;
     }
 }
 
