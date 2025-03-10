@@ -900,6 +900,12 @@ p {
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .5s;
   }
+
+  @media (max-width: 576px) {
+    .box {
+        font-size: 13px;
+    }
+  }
   
   .reads {
     color: white;
