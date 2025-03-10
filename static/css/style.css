@@ -179,6 +179,7 @@ p {
 .sticky_icons {
     position: fixed;
     bottom: 30px;
+    left: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -187,17 +188,18 @@ p {
 
 .sticky_icon {
     background: #4c4c4c;
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
+    /* border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px; */
+    border-radius: 50%;
 }
 
 .sticky_icon i {
-    font-size: 30px;
+    font-size: 35px;
     color: white;
 }
 
@@ -611,7 +613,7 @@ p {
 .footer {
     background-color: black;
     color: white;
-    padding: 60px 0 0 0;
+    padding: 20px 0 0 0;
 }
 
 .footer_logo {
@@ -658,7 +660,8 @@ p {
 .footer_links p {
     margin-bottom: 0;
     padding: 5px 0 5px 0;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .footer_line {
@@ -1138,7 +1141,7 @@ p {
     overflow: hidden;
     transition: all 0.3s;
     border-radius: 12px;
-    background-color: #ecd448;
+    background-color: #25abe0;
     font-weight: bolder;
     box-shadow: 0 2px 0 2px #000;
    }
@@ -1148,7 +1151,8 @@ p {
     position: absolute;
     width: 100px;
     height: 120%;
-    background-color: #ff6700;
+    /* background-color: #ff6700; */
+    background-color: white;
     top: 50%;
     transform: skewX(30deg) translate(-150%, -50%);
     transition: all 0.5s;
