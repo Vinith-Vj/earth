@@ -179,7 +179,8 @@ p {
 .sticky_icons {
     position: fixed;
     bottom: 30px;
-    left: 10px;
+    /* left: 10px; */
+    right: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
